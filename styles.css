@@ -81,13 +81,17 @@ body {
 }
 
 .card {
-  background: var(--card-bg);
-  border-radius: var(--radius);
+  background: #00000018;
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: var(--shadow);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   display: flex;
   flex-direction: column;
   transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.card h3, p{
+  padding-left: 12px;
 }
 
 .card:hover {
@@ -100,6 +104,23 @@ body {
   height: auto;
   object-fit: cover;
   display: block;
+}
+
+.contact-menu {
+  display: flex;           /* put links side by side */
+  gap: 15px;               /* space between items */
+  list-style: none;        /* remove bullets */
+}
+
+.contact-menu a {
+  text-decoration: none;   /* remove underline */
+  color: #555;             /* link color */
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.contact-menu a:hover {
+  color: #e1306c;          /* Instagram pink on hover */
 }
 
 /* Footer */
