@@ -70,6 +70,37 @@ body {
   padding: 0px 20px;
 }
 
+.showcase-grid{
+  padding: 10px 12px 14px;
+  margin: 50px;
+  gap: 30px;
+
+  display: grid;
+  /* auto-fit creates as many columns as will fit; minmax sets the minimum column width */
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr))
+}
+
+.card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(12,18,34,0.12);
+}
+
+.showcase-grid img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
 
 /* Footer */
 .footer {
